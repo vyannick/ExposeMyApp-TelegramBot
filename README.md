@@ -16,11 +16,11 @@ The free tier of ngrok only allows 1 tunnel to be active.
 ## Bot commands
 - /expose <service_name> Exposes the given service/application
 - /stop Stops the active ngrok tunnel
-- 
+-
 # Configuration
 
 The python application expects the following parameters to be set:
-- API_KEY the API key ogf your telegram bot
+- API_KEY the API key of your telegram bot
 - SERVICES_FILE the location of your services file
 - NGROK_BINARY The location of the ngrok binary
 
