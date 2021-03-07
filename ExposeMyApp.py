@@ -61,7 +61,7 @@ def return_active_ngrok_url(update,service=None,attempts=0):
         if attempts < 3:
             return_active_ngrok_url(update,service=ngrok_running,attempts=attempts+1)
         else:
-            update.message.reply_text("Couldn't retrieve ngrok URL:\n " + str(ngrok_url.stderr))
+            update.message.reply_text("Couldn't retrieve ngrok URL:\n " + str(ngrok_url_request.status_code))
     else:
         try:
             ngrok_url = ngrok_url_request.json()["tunnels"][0]["public_url"]
