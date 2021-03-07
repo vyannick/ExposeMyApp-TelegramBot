@@ -32,3 +32,6 @@ e.g.:
     "secure_app" : "https://localhost:8443",
     "apache" : 8080
 }
+
+The port would be whatever you would write behind "http" in an ngrok command (see: https://ngrok.com/docs#http)
+
