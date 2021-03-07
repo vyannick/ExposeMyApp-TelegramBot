@@ -1,0 +1,17 @@
+[Unit]
+Description=ExposeMyApp Service
+After=multi-user.target
+
+[Service]
+Type=simple
+User=<user>
+WorkingDirectory= /home/<user>/
+
+ExecStart=/usr/bin/python3 ExposeMyApp.py
+
+Environment="API_KEY=XXXXX"
+Environment="SERVICES_FILE=services.json"
+Environment="NGROK_BINARY=ngrok"
+
+[Install]
+WantedBy=multi-user.target
