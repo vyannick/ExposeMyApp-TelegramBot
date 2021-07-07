@@ -1,3 +1,6 @@
 {
+    "bitwarden" : {"port":"https://localhost:8008","type":"http"},
+    "monit" : {"port":"192.168.0.223:2812","type":"http"},
+    "ssh": {"port":"22","type":"tcp"},
     "test" : 12345
 }
